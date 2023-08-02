@@ -6,7 +6,8 @@ const workSlides = {
         {
           title: 'title',
           path: '/thumb1.png',
-          link: 'https://promptopia-m22clk21b-tiwari-niket.vercel.app/'
+          link: 'https://promptopia-m22clk21b-tiwari-niket.vercel.app/',
+          desc: 'Promptopia is an open-source AI prompting tool for mordern world to discover, create and share creative prompts'
         },
       ],
     },
@@ -15,7 +16,8 @@ const workSlides = {
         {
           title: 'title',
           path: '/thumb2.png',
-          link: 'https://food-record-chi.vercel.app/'
+          link: 'https://food-record-chi.vercel.app/',
+          desc: `The peon food order recording system is a web app that helps peons record factory worker's daily food orders.`
         },
       ],
     },
@@ -57,9 +59,10 @@ const WorkSlider = () => {
                 {slide.images.map((image, index)=>{
                   return(
                     <a href={image.link} key={index} className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
-                      <div className='flex items-center justify-center relative overflow-hidden group'>
+                      <div className='flex flex-col items-center justify-center relative overflow-hidden group'>
                         {/* image */}
                         <Image src={image.path} width={500} height={300} alt='' />
+                        <div className='mt-2 mx-10 px-5 text-center'>{image.desc}</div>
                         {/* overlay gradient */}
                         <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                         {/* title */}
