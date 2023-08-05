@@ -119,7 +119,7 @@ const About = () => {
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
         <div className='flex-1 flex flex-col justify-center p-5'>
-          <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='h2'>My Journey: <span className='text-accent'>Path of Growth and Expertis.</span></motion.h2>
+          <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='h2'>My Journey: <span className='text-accent'>Path of Growth and Expertise.</span></motion.h2>
           <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Here&apos;s a glimpse into my journey of self-improvement and professional development. From obtaining certifications to mastering various programming languages and tools, I strive to stay ahead in the fast-paced world of technology.</motion.p>
         </div>
         {/* info */}
