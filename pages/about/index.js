@@ -128,7 +128,7 @@ const About = () => {
             {aboutData.map((item) => {
               return (
                 <div key={item.id} className={`${index === item.id && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} 
-                  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  cursor-pointer capitalize sm:text-lg text-sm relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(item.id)}>
                   {item.title}
                 </div>
@@ -149,7 +149,7 @@ const About = () => {
                   {/* icons */}
                   <div className='flex gap-x-4'>
                     {item.icons?.map((icon) => {
-                      return <div key={icon.id} className='text-2xl text-white'>{icon.icon}</div>
+                      return <div key={icon.id} className='sm:text-2xl text-md text-white'>{icon.icon}</div>
                     })}
                   </div>
                 </div>
