@@ -49,7 +49,7 @@ const WorkSlider = () => {
         clickable: true
       }}
       modules={[Pagination]}
-      className='h-[280px] sm:h-[400px] mb-[100px]'
+      className='h-[400px] mb-[100px]'
     >
       {
         workSlides.slides.map((slide, index) => {
@@ -62,7 +62,7 @@ const WorkSlider = () => {
                       <div className='flex flex-col items-center justify-center relative overflow-hidden group'>
                         {/* image */}
                         <Image src={image.path} width={500} height={300} alt='' />
-                        <div className='mt-2 sm:visible invisible mx-10 px-5 text-center'>{image.desc}</div>
+                        <div className='mt-2 mx-10 px-5 text-center'>{image.desc}</div>
                         {/* overlay gradient */}
                         <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                         {/* title */}
