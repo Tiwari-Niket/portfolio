@@ -71,17 +71,17 @@ const aboutData = [
       {
         id: 1,
         title: 'Web Developer - SAASO',
-        stage: 'June 2023 - July 2023',
+        stage: 'Jun 2023 - Jul 2023',
       },
       {
         id: 2,
         title: 'Web Developer - I-Kadambari Website ',
-        stage: 'February 2023 - April 2023',
+        stage: 'Feb 2023 - Apr 2023',
       },
       {
         id: 3,
         title: 'Amazon Web Services ',
-        stage: 'July 2022 - August 2022',
+        stage: 'Jul 2022 - Aug 2022',
       },
     ],
   },
