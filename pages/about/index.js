@@ -119,7 +119,7 @@ const About = () => {
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
         <div className='flex-1 flex flex-col justify-center p-5'>
-          <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='h2'>My Journey: <span className='text-accent'>Path of Growth and Expertise.</span></motion.h2>
+          <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='h2'>My Journey: <span className='text-accent'>Path of Growth and Expertis.</span></motion.h2>
           <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Here&apos;s a glimpse into my journey of self-improvement and professional development. From obtaining certifications to mastering various programming languages and tools, I strive to stay ahead in the fast-paced world of technology.</motion.p>
         </div>
         {/* info */}
@@ -139,17 +139,17 @@ const About = () => {
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
             {aboutData[index].info.map((item) => {
               return (
-                <div key={item.id} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
+                <div key={item.id} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 sm:mb-0 mb-2 items-center text-white/60'>
                   {/* title */}
                   <Link href={item?.link?item.link:''} className={`${item.link? 'cursor-pointer' : 'cursor-auto'} flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60`}>
-                    <div className='font-light mb-2 md:mb-0'>{item.title}</div>
-                    <div className='hidden md:flex'>-</div>
-                    <div>{item.stage}</div>
+                    <div className='font-light mb-2 md:mb-0 sm:text-lg text-sm'>{item.title}</div>
+                    <div className='hidden md:flex sm:text-lg text-sm'>-</div>
+                    <div className='sm:text-lg text-sm'>{item.stage}</div>
                   </Link>
                   {/* icons */}
                   <div className='flex gap-x-4'>
                     {item.icons?.map((icon) => {
-                      return <div key={icon.id} className='sm:text-2xl text-md text-white'>{icon.icon}</div>
+                      return <div key={icon.id} className='sm:text-2xl text-lg text-white'>{icon.icon}</div>
                     })}
                   </div>
                 </div>
