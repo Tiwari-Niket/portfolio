@@ -15,7 +15,7 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb2.png',
+          path: '/diabot.png',
           link: 'https://diabot-snowy.vercel.app/',
           desc: `Diabot: A Smart Chatbot For Diabetes Prediction and Prevention.`
         },
