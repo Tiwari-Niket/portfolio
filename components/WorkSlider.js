@@ -16,8 +16,8 @@ const workSlides = {
         {
           title: 'title',
           path: '/thumb2.png',
-          link: 'https://food-record-chi.vercel.app/',
-          desc: `The peon food order recording system is a web app that helps peons record factory worker's daily food orders.`
+          link: 'https://diabot-snowy.vercel.app/',
+          desc: `Diabot: A Smart Chatbot For Diabetes Prediction and Prevention.`
         },
       ],
     },
